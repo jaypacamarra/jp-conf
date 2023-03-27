@@ -9,8 +9,6 @@ install:
 
 	sudo apt update && sudo apt upgrade -y
 	sudo apt install alacritty -y
-	sudo apt install qtile -y
-	sudo apt install dm-tools -y
 	sudo apt install rofi -y 
 	sudo apt install ranger -y 
 	sudo apt install vlc -y
@@ -18,6 +16,8 @@ install:
 	sudo apt install lightdm -y
 	sudo apt install pip -y
 	pip install pulsectl
+	pip install xcffib
+	pip install qtile
 
 	cp -r ./qtile ~/.config/qtile
 	cp -r ./alacritty ~/.config/alacritty
@@ -26,5 +26,7 @@ install:
 	cp -r ./.zshrc ~
 
 	sudo cp ./qtile.desktop /usr/share/xsessions
+
+	echo "Finished installing jp-conf..."
 
 #TODO: uninstall:
