@@ -4,7 +4,7 @@ install:
 	@if [ -d "$(HOME)/Wallpapers" ]; then \
 		echo "$(HOME)/Wallpapers already exists...skipping"; \
 	else \
-		git clone https://gitlab.com/dwt1/wallpapers.git $(HOME)/Delme; \
+		git clone https://gitlab.com/dwt1/wallpapers.git $(HOME)/Wallpapers; \
 	fi
 
 	sudo apt update && sudo apt upgrade -y
