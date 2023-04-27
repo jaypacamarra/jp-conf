@@ -35,6 +35,7 @@ local options = {
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   modeline = false,                        -- script to setup multi monitorsot sure what this does but i dont like it
+  laststatus = 0,                          -- gets rid of file name on statusbar
 }
 
 vim.opt.shortmess:append "c"

@@ -51,6 +51,7 @@ return packer.startup(function(use)
   }
   use { "nvim-treesitter/nvim-treesitter", {run =  ':TSUpdate'} }
   use "tpope/vim-fugitive" -- git wrapper
+  use {'romgrk/barbar.nvim'}
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -63,6 +64,7 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'saadparwaiz1/cmp_luasnip'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
   use 'L3MON4D3/LuaSnip' --snippet engine
   use 'rafamadriz/friendly-snippets' -- a bunch of snippets to use
 
